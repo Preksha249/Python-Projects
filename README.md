@@ -1,4 +1,4 @@
-<h1>This is the virtual environment python project folder.<h1/>
+<h1>This is the virtual environment python project folder.</h1>
 
 - clone the repo
 - from the root folder run %source venv/bin/activate
