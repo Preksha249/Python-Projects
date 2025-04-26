@@ -9,3 +9,8 @@
 - install python
 - install pip
 - install fastapi and uvicorn(the server)
+
+-run command: % uvicorn main:app
+
+
+-install thinder client extension on vsc, to run post methods. 
