@@ -1,5 +1,5 @@
 from typing import Union, List
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from uuid import uuid4, UUID
 from models import User, Gender, Role
 
@@ -41,3 +41,7 @@ async def delete_user(user_id: UUID):
         if user.id == user_id:
             db.remove(user)
             return
+    raise HTTPException(
+        status_code=404, 
+        detail=f"user with id: {user_id} does not exist"
+    )
